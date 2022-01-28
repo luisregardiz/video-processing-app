@@ -18,7 +18,7 @@ const ProcessingApp: NextPage<ProcessingAppProps> = () => {
     return (
         <>
             <Head>
-                <title>VPA - Login</title>
+                <title>VPA - Processing App</title>
                 <meta name="description" content="Video Processing App" />
                 <link rel="icon" href="/favicon.ico" />
             </Head>
