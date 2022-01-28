@@ -4,7 +4,7 @@ export const submitFileForProcessing = async (token: string, file: File) => {
     try {
         const { data } = await axios({
             method: "post",
-            url: "https://api.symbl.ai/v1/process/video",
+            url: `${process.env.NEXT_PUBLIC_SYMBL_URL}/process/video`,
             data: file,
             headers: {
                 "x-api-key": token,

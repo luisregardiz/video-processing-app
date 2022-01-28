@@ -3,7 +3,7 @@ import axios from "axios";
 export const getTranscripts = async (token: string, conversationId: string) => {
     try {
         const res = await axios.get(
-            `https://api.symbl.ai/v1/conversations/${conversationId}/messages`,
+            `${process.env.NEXT_PUBLIC_SYMBL_URL}/conversations/${conversationId}/messages`,
             {
                 headers: {
                     "x-api-key": token,

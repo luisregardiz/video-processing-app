@@ -42,7 +42,7 @@ const VideoApp: FC<VideoAppProps> = () => {
 
     useInterval(
         () => {
-            fetch(`https://api.symbl.ai/v1/job/${jobId}`, {
+            fetch(`${process.env.NEXT_PUBLIC_SYMBL_URL}/job/${jobId}`, {
                 method: "GET",
                 headers: {
                     "x-api-key": token,
